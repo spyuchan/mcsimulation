@@ -21,6 +21,7 @@
 		70DF17C11961200600B31CAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DF17A31961200600B31CAE /* UIKit.framework */; };
 		70DF17C91961200600B31CAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DF17C71961200600B31CAE /* InfoPlist.strings */; };
 		70DF17CB1961200600B31CAE /* montecarlosimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DF17CA1961200600B31CAE /* montecarlosimulatorTests.m */; };
+		70DF17D51961237E00B31CAE /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70DF17D41961237E00B31CAE /* circle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		70DF17C61961200600B31CAE /* montecarlosimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "montecarlosimulatorTests-Info.plist"; sourceTree = "<group>"; };
 		70DF17C81961200600B31CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70DF17CA1961200600B31CAE /* montecarlosimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = montecarlosimulatorTests.m; sourceTree = "<group>"; };
+		70DF17D41961237E00B31CAE /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +114,14 @@
 		70DF17A51961200600B31CAE /* montecarlosimulator */ = {
 			isa = PBXGroup;
 			children = (
+				70DF17D61961E57600B31CAE /* iPad */,
 				70DF17AE1961200600B31CAE /* AppDelegate.h */,
 				70DF17AF1961200600B31CAE /* AppDelegate.m */,
 				70DF17B11961200600B31CAE /* Main.storyboard */,
 				70DF17B41961200600B31CAE /* ViewController.h */,
 				70DF17B51961200600B31CAE /* ViewController.m */,
 				70DF17B71961200600B31CAE /* Images.xcassets */,
+				70DF17D41961237E00B31CAE /* circle@2x.png */,
 				70DF17A61961200600B31CAE /* Supporting Files */,
 			);
 			path = montecarlosimulator;
@@ -150,6 +154,13 @@
 				70DF17C71961200600B31CAE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70DF17D61961E57600B31CAE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DF17D51961237E00B31CAE /* circle@2x.png in Resources */,
 				70DF17B81961200600B31CAE /* Images.xcassets in Resources */,
 				70DF17AA1961200600B31CAE /* InfoPlist.strings in Resources */,
 				70DF17B31961200600B31CAE /* Main.storyboard in Resources */,
@@ -381,7 +393,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "montecarlosimulator/montecarlosimulator-Prefix.pch";
 				INFOPLIST_FILE = "montecarlosimulator/montecarlosimulator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +408,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "montecarlosimulator/montecarlosimulator-Prefix.pch";
 				INFOPLIST_FILE = "montecarlosimulator/montecarlosimulator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
